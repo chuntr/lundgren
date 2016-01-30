@@ -1,7 +1,5 @@
-# Monokai-seti theme
+# tears-in-rain theme
 
-A monokai syntax theme for the seti-ui for Atom.
+A syntax theme for the seti-ui for Atom.
 
-Forked from the atom monokai syntax theme.
-
-![](https://i.imgur.com/xBHmpMA.png)
+Forked from the monokai-seti theme, which itself was forked from the atom monokai syntax theme.
