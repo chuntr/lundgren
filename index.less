@@ -1,4 +1,5 @@
-@import 'syntax-variables';
+@import 'styles/syntax-variables';
+@import 'styles/twig-extended';
 
 .atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -93,10 +94,11 @@
   color: #75715E;
 }
 
+/*
 .string {
   color: #E6DB74;
 }
-
+*/
 .constant.numeric {
   color: #AE81FF;
 }
@@ -111,13 +113,15 @@
 }
 
 .keyword {
-  color: #F92672;
+    color: @syntax-keyword-twig;
+    //color: #F92672;
 }
 
 .storage {
-  color: #F92672;
+    //color: #F92672;
+    color: @syntax-variable;
+    font-style: italic;
 }
-
 .storage.type {
   font-style: italic;
   color: #66D9EF;
@@ -148,15 +152,18 @@
 }
 
 .entity.name.tag {
-  color: #F92672;
+  //color: #F92672;
+  color: @syntax-html-tag-twig;
+  font-weight: bolder;
 }
-
 .entity.other.attribute-name {
   color: #A6E22E;
 }
 
 .support.function {
-  color: #66D9EF;
+    color: @syntax-function-call-twig;
+    font-weight: bolder;
+    //color: #66D9EF;
 }
 
 .support.constant {
@@ -182,4 +189,46 @@
 // Jade syntax
 .class.jade {
   color: #AE81FF;
+}
+
+// Chunter customizations
+.variable.other,
+.storage,
+.punctuation.separator.property {
+    color: @syntax-variable;
+    font-style: italic;
+}
+
+.meta.function-call,
+.source.python,
+.variable.parameter {
+    color: @syntax-variable;
+}
+
+.keyword.control,
+.keyword.operator,
+.keyword.other {
+    color: @syntax-keyword-twig;
+}
+
+.punctuation.definition.string {
+    color: @syntax-string-quoted-twig;
+}
+
+.punctuation.definition.variable.php {
+    color: @syntax-punctuation-variable-definition;
+    font-weight: bolder;
+}
+
+.punctuation.definition.arguments,
+.punctuation.definition.tag,
+.punctuation.definition.parameters {
+    color: @syntax-punctuation-variable-definition;
+    font-weight: bolder;
+}
+
+.string-contents.quoted,
+.string.quoted,
+.string.unquoted {
+    color: @syntax-string-quoted-twig;
 }
