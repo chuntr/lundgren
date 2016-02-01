@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/lundgren",
+  "repository": "https://github.com/chuntr/lundgren",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
