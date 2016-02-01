@@ -1,13 +1,13 @@
 {
   "name": "lundgren",
   "theme": "syntax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A something something syntax theme",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/chuntr/lundgren",
+  "repository": "https://github.com/chuntr/lundgren-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
