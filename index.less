@@ -1,6 +1,6 @@
 @import "styles/base.less";
 @import 'styles/syntax-variables';
-@import 'styles/twig-extended';
+//@import 'styles/twig-extended';
 
 .atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -113,17 +113,6 @@
   color: #AE81FF;
 }
 
-.keyword {
-  color: @syntax-keyword-twig;
-  //color: #F92672;
-}
-
-.storage {
-  //color: #F92672;
-  color: @syntax-variable;
-  font-style: italic;
-
-}
 .storage.type {
   font-style: italic;
   color: #66D9EF;
@@ -162,12 +151,6 @@
   color: #A6E22E;
 }
 
-.support.function {
-    color: @syntax-function-call-twig;
-    font-weight: bolder;
-    //color: #66D9EF;
-}
-
 .support.constant {
   color: #66D9EF;
 }
@@ -193,18 +176,12 @@
   color: #AE81FF;
 }
 
-// Chunter customizations
-.variable.other,
-.storage,
-.punctuation.separator.property {
-    color: @syntax-variable;
-    font-style: italic;
-}
+/* chuntr customizations */
 
-.meta.function-call,
-.source.python,
-.variable.parameter {
-    color: @syntax-variable;
+
+.keyword {
+  color: @syntax-keyword-twig;
+  //color: #F92672;
 }
 
 .keyword.control,
@@ -213,24 +190,58 @@
     color: @syntax-keyword-twig;
 }
 
+.meta.brace.curly,
+.meta.brace.square {
+    font-weight: bold;
+}
+
+.meta.function-call {
+    color: @syntax-variable;
+}
+
 .punctuation.definition.string {
     color: @syntax-string-quoted-twig;
 }
 
+.punctuation.definition.arguments,
+.punctuation.definition.tag,
+.punctuation.definition.parameters,
 .punctuation.definition.variable.php {
     color: @syntax-punctuation-variable-definition;
     font-weight: bolder;
 }
 
-.punctuation.definition.arguments,
-.punctuation.definition.tag,
-.punctuation.definition.parameters {
-    color: @syntax-punctuation-variable-definition;
-    font-weight: bolder;
+.punctuation.section.scope {
+    font-weight: bold;
 }
 
-.string-contents.quoted,
-.string.quoted,
-.string.unquoted {
+.punctuation.separator.property {
+    color: @syntax-variable;
+    //font-style: italic;
+}
+
+.source.python {
+    color: @syntax-variable;
+}
+
+.string-contents,
+.string {
     color: @syntax-string-quoted-twig;
+}
+
+.storage {
+    color: @syntax-keyword-twig;
+}
+.support.function {
+    color: @syntax-function-call-twig;
+    font-weight: bolder;
+    //color: #66D9EF;
+}
+
+.variable.parameter {
+    color: @syntax-variable;
+}
+.variable.other {
+    color: @syntax-variable;
+    //font-style: italic;
 }

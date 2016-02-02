@@ -1,13 +1,4 @@
-@syntax-function-call-twig:              #66D9EF; // cyan
-@syntax-html-tag-twig:                   #406BEF; // deep blue
-@syntax-keyword-control-twig:            #66D9EF; // cyan
-@syntax-keyword-twig:                    #E65353; // red brown
-@syntax-punctuation-variable-definition: #FFFFFF; // cyan
-@syntax-punctuation-variable-tag-twig:   #8ABEB7; // dark cyan
-@syntax-string-quoted-twig:              #4AF3AB; // pale green
-@syntax-variable-twig:                   #4FA4AF; // orange
-@syntax-variable:                        #66D9EF; // cyan
-
+@import "syntax-variables";
 // Twig variable names and function calls
 .variable.other.twig,
 .variable.other.property.twig,
@@ -82,7 +73,6 @@
 .keyword.operator.string.php,
 .storage.modifier.php {
     color: @syntax-keyword-twig;
-    font-style: italic;
 }
 .variable.other.php,
 .storage.php {
