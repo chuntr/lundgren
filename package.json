@@ -7,7 +7,6 @@
     "syntax",
     "theme"
   ],
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chuntr/lundgren-syntax.git"
@@ -37,11 +36,3 @@
     "folders": []
   }
 }
-=======
-  "repository": "https://github.com/chuntr/lundgren-syntax",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  }
-}
->>>>>>> 1b09f36495838e16b2a7f586d665f330cc6d7932
