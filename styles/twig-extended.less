@@ -1,0 +1,87 @@
+@import "syntax-variables";
+// Twig variable names and function calls
+.variable.other.twig,
+.variable.other.property.twig,
+.meta.function-call.twig,
+.meta.function-call.object.twig,
+.punctuation.separator.property.twig {
+    color: @syntax-variable-twig;
+    font-style: italic;
+}
+.support.function.string.php,
+.support.function,
+.meta.function-call.php,
+.meta.function-call.object.php {
+    color: @syntax-function-call-twig;
+    font-weight: bolder;
+}
+
+// quoted strings
+.string-contents.quoted.single.php,
+.string-contents.quoted.double.php,
+.string.quoted.single.html,
+.string.quoted.double.html,
+.string.unquoted.html,
+.string.quoted.single.twig,
+.string.quoted.double.twig {
+    color: @syntax-string-quoted-twig;
+}
+// quoted string text
+.punctuation.definition.string.begin.twig,
+.punctuation.definition.string.end.twig,
+.punctuation.definition.string.begin.html,
+.punctuation.definition.string.end.html,
+.punctuation.definition.string.begin.php,
+.punctuation.definition.string.end.php {
+    color: @syntax-string-quoted-twig;
+}
+// Twig begin/end tags: "{{ }}"
+.punctuation.section.tag.twig {
+    color: @syntax-punctuation-variable-tag-twig;
+    font-style: italic;
+}
+// Twig keywords
+.keyword.operator.comparison.twig,
+.keyword.control.twig {
+    color: @syntax-keyword-control-twig;
+    font-style: italic;
+}
+.punctuation.section.embedded.begin.php {
+    color: @syntax-html-tag-twig;
+}
+// HTML tag borders
+.punctuation.definition.tag.html,
+.punctuation.definition.tag.begin.html,
+.punctuation.definition.tag.end.html {
+    color: @syntax-punctuation-variable-definition;
+    font-weight: bolder;
+}
+// HTML tags
+.entity.name.tag.html,
+.entity.name.tag.inline.any.html,
+.entity.name.tag.block.any.html {
+    color: @syntax-html-tag-twig;
+    font-weight: bolder;
+}
+.punctuation.definition.variable.php {
+    color: @syntax-punctuation-variable-definition;
+    font-weight: bolder;
+}
+.keyword.control.php,
+.keyword.control,
+.keyword.operator,
+.keyword.operator.string.php,
+.storage.modifier.php {
+    color: @syntax-keyword-twig;
+}
+.variable.other.php,
+.storage.php {
+    color: @syntax-variable-twig;
+}
+//
+.keyword.operator.key.php,
+.keyword.operator.class.php,
+.keyword.operator.assignment.php,
+.keyword.other.new.php {
+    color: @syntax-keyword-twig;
+}

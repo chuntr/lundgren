@@ -1,0 +1,279 @@
+@import "styles/base.less";
+@import 'styles/syntax-variables';
+//@import 'styles/twig-extended';
+
+.atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+
+    .cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+    }
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+
+  .gfm {
+    .markup {
+      &.heading {
+        color: #A6E22E;
+        font-weight: bold;
+      }
+
+      &.underline {
+        color: #E6DB74;
+        text-decoration: underline;
+      }
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .raw {
+      color: #66D9EF;
+    }
+
+    .variable.list {
+      color: #F92672;
+      font-weight: bold;
+    }
+
+    .link {
+      color: #CCC;
+
+      .entity {
+        color: #AE81FF;
+      }
+    }
+  }
+}
+
+.comment {
+  color: #75715E;
+}
+
+/*
+.string {
+  color: #E6DB74;
+}
+*/
+.constant.numeric {
+  color: #AE81FF;
+}
+
+.constant.language {
+  color: #AE81FF;
+}
+
+.constant.character,
+.constant.other {
+  color: #AE81FF;
+}
+
+.storage.type {
+  font-style: italic;
+  color: #66D9EF;
+}
+
+.entity.name.class {
+  text-decoration: underline;
+  color: #A6E22E;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #A6E22E;
+}
+
+.entity.name.function {
+  color: #A6E22E;
+}
+
+.entity.name.instance {
+  color: #66D9EF;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #FD971F;
+}
+
+.entity.name.tag {
+  //color: #F92672;
+  color: @syntax-html-tag-twig;
+  font-weight: bolder;
+}
+.entity.other.attribute-name {
+  color: #A6E22E;
+}
+
+.support.constant {
+  color: #66D9EF;
+}
+
+.support.type,
+.support.class {
+  font-style: italic;
+  color: #66D9EF;
+}
+
+.invalid {
+  color: #F8F8F0;
+  background-color: #F92672;
+}
+
+.invalid.deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF;
+}
+
+// Jade syntax
+.class.jade {
+  color: #AE81FF;
+}
+
+/* chuntr customizations */
+
+.keyword {
+  color: @syntax-keyword-twig;
+  //color: #F92672;
+}
+
+.keyword.control,
+.keyword.operator,
+.keyword.other {
+    color: @syntax-keyword-twig;
+}
+
+.meta.brace.curly,
+.meta.brace.square {
+    font-weight: bold;
+}
+
+.meta.function-call {
+    color: @syntax-variable;
+}
+
+.punctuation.definition.string {
+    color: @syntax-string-quoted-twig;
+}
+
+.punctuation.definition.arguments,
+.punctuation.definition.tag,
+.punctuation.definition.parameters,
+.punctuation.definition.variable.php {
+    color: @syntax-punctuation-variable-definition;
+    font-weight: bolder;
+}
+
+// italicize twig elements not already dealt with
+.keyword.control.twig,
+.keyword.operator.comparison.twig,
+.punctuation.definition.parameters.begin.twig,
+.punctuation.definition.parameters.end.twig,
+.punctuation.definition.string.begin.twig,
+.punctuation.definition.string.end.twig,
+.punctuation.section.array.begin.twig,
+.punctuation.section.array.end.twig,
+.punctuatoin.seperator.object.twig,
+.string.quoted.single.twig,
+.string.quoted.double.twig {
+    font-style: italic;
+}
+
+.punctuation.section.scope {
+    font-weight: bold;
+}
+
+// Twig begin/end tags: "{{ }}"
+.punctuation.section.tag.twig {
+    color: @syntax-punctuation-variable-tag-twig;
+    font-style: italic;
+}
+
+.punctuation.separator.property {
+    color: @syntax-variable;
+}
+
+.punctuation.separator.property.twig {
+    color: @syntax-variable-twig;
+    font-style: italic;
+}
+
+.source.python {
+    color: @syntax-variable;
+}
+
+.string-contents,
+.string {
+    color: @syntax-string-quoted-twig;
+}
+
+.storage {
+    color: @syntax-keyword-twig;
+}
+
+.support.function {
+    color: @syntax-function-call-twig;
+    font-weight: bolder;
+    //color: #66D9EF;
+}
+
+.variable.parameter {
+    color: @syntax-variable;
+}
+.variable.other {
+    color: @syntax-variable;
+}
+
+.variable.other.twig,
+.variable.other.property.twig,
+.meta.function-call.twig,
+.meta.function-call.object.twig {
+    color: @syntax-variable-twig;
+    font-style: italic;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "lundgren-syntax",
+  "theme": "syntax",
+  "version": "0.0.5",
+  "description": "A something something syntax theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuntr/lundgren-syntax.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# lundgren theme\n\n\nA syntax theme for the seti-ui for Atom.\n\nForked from the monokai-seti theme, which itself was forked from the atom monokai syntax theme.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/chuntr/lundgren-syntax/issues"
+  },
+  "homepage": "https://github.com/chuntr/lundgren-syntax#readme",
+  "_id": "lundgren-syntax@0.0.5",
+  "_shasum": "c73c1f3003f5e6d8aa9a3e1a0ef2a7dfb30d1b45",
+  "_resolved": "file:../d-11612-13869-1n2j4ui/package.tgz",
+  "_from": "../d-11612-13869-1n2j4ui/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
