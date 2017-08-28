@@ -210,17 +210,24 @@
 }
 
 // italicize twig elements not already dealt with
+.comment.block.twig,
+.comment.line.number-sign.yaml,
 .keyword.control.twig,
 .keyword.operator.comparison.twig,
+.punctuation.definition.entry.yaml,
 .punctuation.definition.parameters.begin.twig,
 .punctuation.definition.parameters.end.twig,
 .punctuation.definition.string.begin.twig,
 .punctuation.definition.string.end.twig,
 .punctuation.section.array.begin.twig,
 .punctuation.section.array.end.twig,
-.punctuatoin.seperator.object.twig,
+.punctuation.seperator.object.twig,
 .string.quoted.single.twig,
-.string.quoted.double.twig {
+.string.quoted.double.twig,
+.string.quoted.single.yaml,
+.string.quoted.double.yaml,
+.string.unquoted.single.yaml,
+.string.unquoted.single.yaml {
     font-style: italic;
 }
 
@@ -275,4 +282,25 @@
 .meta.function-call.object.twig {
     color: @syntax-variable-twig;
     font-style: italic;
+}
+
+// jinja tweaks
+.comment.block.jinja,
+.entity.other.jinja.delimiter.comment,
+.entity.other.jinja.delimiter.tag,
+.entity.other.jinja.delimiter.variable,
+.keyword.control.jinja,
+.string.quoted.single.jinja,
+.string.quoted.double.jinja,
+.variable.other.jinja {
+    font-style: italic;
+}
+
+.comment.block.jinja,
+.keyword.operator.arithmetic.jinja,
+.entity.other.jinja.delimiter.comment,
+.entity.other.jinja.delimiter.tag,
+.entity.other.jinja.delimiter.variable,
+.punctuation.other.jinja {
+    color: @syntax-punctuation-tag-twig;
 }
